@@ -56,6 +56,13 @@ header nav ul li a {
     color: black;
 }
 
+button {
+    background-color: #0061ff;
+    color: white;
+    border: none;
+    padding: .5em .8em;
+}
+
 div.jumbotron-box .jumbotron-info,
 section.dropbox-partner div.partner-info {
     width: 40%;
@@ -80,6 +87,11 @@ div.dbusiness-features article.feature-card {
     border: 1px solid black;
 }
 
+article.plan-card button {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+}
+
 div.sub-options article.custom-plan {
     flex-grow: 1;
 }
@@ -90,6 +102,15 @@ article.plan-card p.sub-user {
 
 article.plan-card ul {
     margin: 1em 0;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+div.partner-info button.btn-white {
+    border: 1px solid black;
 }
 
 section.customer-teams {
