@@ -106,9 +106,10 @@ section.faq {
     padding-bottom: 5rem;
 }
 
-section.faq h2 {
+section.faq h2,
+section.faq div.question:last-child {
     padding-bottom: 1em;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #b2b2b2;
 }
 
 section.faq div.question {
@@ -117,6 +118,34 @@ section.faq div.question {
     font-weight: bold;
 }
 
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer section {
+    padding-bottom: 2rem;
+}
+
+footer nav ul {
+    font-weight: bold;
+    padding: 4em 0 6em;
+}
+
+footer nav ul li {
+    margin-top: 1em;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+
+footer div.language span {
+    padding-top: 2em;
+    border-top: 1px solid white;
+}
 
 .bg-lightblue {
     background-color: #b4d0e7;
