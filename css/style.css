@@ -33,10 +33,10 @@ span {
 .flex-between {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header nav {
+    align-items: center;
     padding: 1rem;
     background-color: white;
     border-bottom: 1px dashed black;
@@ -68,7 +68,6 @@ main section {
 
 section.subscription-plan div.sub-options,
 section.dropbox-business div.dbusiness-features {
-    align-items: stretch;
     flex-wrap: wrap;
     margin-top: 1rem;
     border: 1px dashed red;
@@ -85,10 +84,6 @@ div.sub-options article.custom-plan {
     flex-grow: 1;
 }
 
-div.sub-options article.custom-plan>div {
-    align-items: stretch;
-}
-
 article.plan-card p.sub-user {
     text-align: center;
 }
@@ -97,7 +92,30 @@ article.plan-card ul {
     margin: 1em 0;
 }
 
+section.customer-teams div.customers {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+section.customer-teams div.customer {
+    border: 1px solid blueviolet;
+}
+
+section.bg-lightblue,
+section.faq {
+    padding-bottom: 5rem;
+}
+
+section.faq h2 {
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+section.faq div.question {
+    padding: 1.5em 0;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
 
 
 .bg-lightblue {
