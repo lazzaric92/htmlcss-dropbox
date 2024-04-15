@@ -22,13 +22,11 @@ span {
 
 .container-big {
     max-width: 60%;
+    margin: 0 auto;
 }
 
 .container-small {
     max-width: 50%;
-}
-
-.m-centered {
     margin: 0 auto;
 }
 
@@ -58,23 +56,26 @@ header nav ul li a {
     color: black;
 }
 
-div.jumbotron-box .jumbotron-info {
+div.jumbotron-box .jumbotron-info,
+section.dropbox-partner div.partner-info {
     width: 40%;
     border-top: 1px dashed white;
 }
 
-section.subscription-plan {
-    padding: 3em 0;
+main section {
+    padding-top: 5em;
 }
 
-section.subscription-plan div.sub-options {
+section.subscription-plan div.sub-options,
+section.dropbox-business div.dbusiness-features {
     align-items: stretch;
     flex-wrap: wrap;
     margin-top: 1rem;
     border: 1px dashed red;
 }
 
-div.sub-options article.plan-card {
+div.sub-options article.plan-card,
+div.dbusiness-features article.feature-card {
     width: calc((100% / 3) - 1rem);
     margin-bottom: 1rem;
     border: 1px solid black;
@@ -95,6 +96,9 @@ article.plan-card p.sub-user {
 article.plan-card ul {
     margin: 1em 0;
 }
+
+
+
 
 .bg-lightblue {
     background-color: #b4d0e7;
