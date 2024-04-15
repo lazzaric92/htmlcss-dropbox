@@ -63,7 +63,7 @@ section.dropbox-partner div.partner-info {
 }
 
 main section {
-    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 section.subscription-plan div.sub-options,
@@ -92,18 +92,31 @@ article.plan-card ul {
     margin: 1em 0;
 }
 
+section.customer-teams {
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
+section.customer-teams div.customer-info {
+    width: 40%;
+}
+
 section.customer-teams div.customers {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 0;
 }
 
 section.customer-teams div.customer {
     border: 1px solid blueviolet;
+    width: 175px;
+    height: 175px;
 }
 
+section.subscription-plan,
 section.bg-lightblue,
 section.faq {
-    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 section.faq h2,
