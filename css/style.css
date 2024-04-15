@@ -12,9 +12,12 @@ ul {
     list-style-type: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+p,
+li,
+a,
+button,
+span {
+    font-size: .8em;
 }
 
 .container-big {
@@ -50,9 +53,47 @@ header nav ul li {
     margin: 0 .5em
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 div.jumbotron-box .jumbotron-info {
     width: 40%;
     border-top: 1px dashed white;
+}
+
+section.subscription-plan {
+    padding: 3em 0;
+}
+
+section.subscription-plan div.sub-options {
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    border: 1px dashed red;
+}
+
+div.sub-options article.plan-card {
+    width: calc((100% / 3) - 1rem);
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+div.sub-options article.custom-plan {
+    flex-grow: 1;
+}
+
+div.sub-options article.custom-plan>div {
+    align-items: stretch;
+}
+
+article.plan-card p.sub-user {
+    text-align: center;
+}
+
+article.plan-card ul {
+    margin: 1em 0;
 }
 
 .bg-lightblue {
