@@ -16,20 +16,20 @@ p,
 li,
 button,
 span {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 button {
     background-color: #0061ff;
     color: white;
     border: none;
-    padding: .5em .8em;
+    padding: .5em 1em;
     margin-right: 0;
     cursor: pointer;
 }
 
 main section {
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
 }
 
 .container-big {
@@ -59,6 +59,11 @@ header nav {
     background-color: white;
 }
 
+header .nav-left>a img {
+    width: 5.5rem;
+    vertical-align: middle;
+}
+
 header nav ul {
     margin: 0 1em;
     display: flex;
@@ -84,7 +89,7 @@ section.jumbotron {
 }
 
 section.jumbotron h1 {
-    font-size: 3.3em;
+    font-size: 3.3rem;
     font-weight: 900;
     margin-bottom: .5em;
 }
@@ -110,31 +115,55 @@ div.jumbotron-info-content button {
 
 div.jumbotron-info-content p,
 div.jumbotron-info-content button {
-    font-size: 0.7em;
+    font-size: 0.7rem;
 }
 
 div.jumbotron-info-content p:last-child {
-    font-size: 2em;
-    margin-top: 1em;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+section.subscription-plan {
+    padding-top: 6.5rem;
+}
+
+section.subscription-plan h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5em;
+}
+
+section.subscription-plan label {
+    font-size: .8rem;
+    vertical-align: text-top;
+    margin-right: 2em;
 }
 
 section.subscription-plan div.sub-options,
 section.dropbox-business div.dbusiness-features {
     flex-wrap: wrap;
     margin-top: 1rem;
-    border: 1px dashed red;
 }
 
 div.sub-options article.plan-card,
 div.dbusiness-features article.feature-card {
     width: calc((100% / 3) - 1rem);
-    margin-bottom: 1rem;
-    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+div.sub-options article.plan-card {
+    border: 1px solid #e4e4e5;
+}
+
+article.plan-card p.sub-user {
+    border-bottom: 1px solid #e4e4e5;
+}
+
+article.plan-card div.card-content {
+    padding: 0 1.5rem;
 }
 
 article.plan-card button {
-    margin: 0 1rem;
-    width: calc(100% - 2rem);
+    width: 100%;
 }
 
 div.sub-options article.custom-plan {
@@ -179,7 +208,6 @@ section.customer-teams div.customer {
     height: 175px;
 }
 
-section.subscription-plan,
 section.dropbox-business.bg-lightblue,
 section.faq {
     padding-top: 5rem;
