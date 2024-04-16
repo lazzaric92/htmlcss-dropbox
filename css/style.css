@@ -15,8 +15,12 @@ ul {
 p,
 li,
 button,
-span {
-    font-size: .8rem;
+span,
+a,
+article.plan-card ul,
+article.plan-card li,
+section.subscription-plan label {
+    font-size: .7rem;
 }
 
 button {
@@ -136,8 +140,11 @@ section.subscription-plan h2 {
     margin-bottom: 1.5em;
 }
 
+section.subscription-plan input[type="radio"] {
+    vertical-align: text-top;
+}
+
 section.subscription-plan label {
-    font-size: .8rem;
     vertical-align: text-top;
     margin-right: 2em;
     cursor: pointer;
@@ -167,16 +174,6 @@ article.plan-card p.sub-user {
 
 article.plan-card div.card-content {
     padding: 1rem;
-}
-
-article.plan-card p,
-article.plan-card ul,
-article.plan-card li,
-article.plan-card a,
-article.plan-card button,
-article.feature-card p,
-section.dropbox-business a {
-    font-size: .7rem;
 }
 
 article.plan-card p.sub-cost,
@@ -213,7 +210,6 @@ article.plan-card button {
 }
 
 article.plan-card button~span {
-    font-size: .7rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #e4e4e5;
     margin-right: .2rem;
@@ -292,25 +288,7 @@ section.dropbox-business a:visited {
 section.customer-teams {
     background-color: #f5f5f5;
     padding: 0;
-}
-
-section.customer-teams div.customer-info {
-    width: 40%;
-    padding: 2rem;
-}
-
-div.customer-info img {
-    width: 50%;
-    padding-bottom: 1.8rem;
-}
-
-div.customer-info div.divider {
-    width: 20%;
-    border-bottom: 2px solid #e4e4e6;
-}
-
-div.customer-info p {
-    margin: 2.5em 0 2em;
+    flex-wrap: wrap;
 }
 
 section.customer-teams div.customers {
@@ -333,6 +311,27 @@ div.customer img {
     filter: invert(1);
 }
 
+section.customer-teams div.customer-info {
+    width: 40%;
+    min-width: 30%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+div.customer-info img {
+    width: 50%;
+    padding-bottom: 1.8rem;
+}
+
+div.customer-info div.divider {
+    width: 20%;
+    border-bottom: 2px solid #e4e4e6;
+}
+
+div.customer-info p {
+    margin: 2.5em 0 2em;
+}
+
 section.dropbox-business.bg-lightblue {
     padding: 5rem 0 3rem;
 }
@@ -348,24 +347,23 @@ section.dropbox-business.bg-lightblue h2 {
 }
 
 section.dropbox-business.bg-lightblue button {
-    font-size: .7rem;
     width: 30%;
     padding: .8em 1.6em;
 }
 
 section.faq {
-    padding: 5rem 0;
+    padding: 6rem 0 6.5rem;
 }
 
-section.faq h2,
-section.faq div.question:last-child {
-    padding-bottom: 1em;
-    border-bottom: 1px solid #b2b2b2;
+section.faq h2 {
+    font-size: 1.75rem;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #b2b2b2
 }
 
 section.faq div.question {
     padding: 1.5em 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #b2b2b2;
     font-weight: bold;
 }
 
@@ -393,9 +391,14 @@ footer nav ul li a {
     font-weight: normal;
 }
 
-footer div.language span {
-    padding-top: 2em;
+footer div.language {
     border-top: 1px solid white;
+    width: 5rem;
+    padding-top: 2em;
+}
+
+footer div.language span {
+    margin-right: .2rem;
 }
 
 .bg-lightblue {
