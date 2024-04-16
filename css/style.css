@@ -144,7 +144,7 @@ section.subscription-plan label {
 }
 
 section.subscription-plan div.sub-options,
-section.dropbox-business div.dbusiness-features {
+section.dropbox-business-feature div.dbusiness-features {
     flex-wrap: wrap;
     margin-top: 1rem;
 }
@@ -173,7 +173,8 @@ article.plan-card p,
 article.plan-card ul,
 article.plan-card li,
 article.plan-card a,
-article.plan-card button {
+article.plan-card button,
+article.feature-card p {
     font-size: .7rem;
 }
 
@@ -260,6 +261,14 @@ div.partner-info p {
 
 div.partner-info button.btn-white {
     border: 1px solid black;
+}
+
+article.feature-card img {
+    width: 100%;
+}
+
+article.feature-card h3 {
+    margin: .4em 0 1em;
 }
 
 section.customer-teams {
