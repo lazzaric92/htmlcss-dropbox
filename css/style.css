@@ -28,6 +28,11 @@ button {
     cursor: pointer;
 }
 
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
 main section {
     padding-bottom: 5rem;
 }
@@ -99,8 +104,7 @@ div.jumbotron-box>img {
     float: right;
 }
 
-div.jumbotron-box .jumbotron-info,
-section.dropbox-partner div.partner-info {
+div.jumbotron-box .jumbotron-info {
     width: 32%;
 }
 
@@ -241,9 +245,17 @@ article.custom-plan button {
     padding: .8em 1.6em;
 }
 
-.btn-white {
-    background-color: white;
-    color: black;
+section.dropbox-partner img {
+    width: 60%;
+}
+
+section.dropbox-partner div.partner-info {
+    width: 35%;
+    padding: 2rem 0;
+}
+
+div.partner-info p {
+    padding: .7rem 0 1.7rem;
 }
 
 div.partner-info button.btn-white {
