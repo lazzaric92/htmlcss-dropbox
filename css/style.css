@@ -273,6 +273,10 @@ article.feature-card h3 {
     margin: .4em 0 1em;
 }
 
+section.dropbox-business {
+    padding-bottom: 6rem;
+}
+
 section.dropbox-business h2 {
     width: 60%;
     margin-bottom: 2.5rem;
@@ -292,6 +296,21 @@ section.customer-teams {
 
 section.customer-teams div.customer-info {
     width: 40%;
+    padding: 2rem;
+}
+
+div.customer-info img {
+    width: 50%;
+    padding-bottom: 1.8rem;
+}
+
+div.customer-info div.divider {
+    width: 20%;
+    border-bottom: 2px solid #e4e4e6;
+}
+
+div.customer-info p {
+    margin: 2.5em 0 2em;
 }
 
 section.customer-teams div.customers {
@@ -302,8 +321,8 @@ section.customer-teams div.customers {
 
 section.customer-teams div.customer {
     border: 8px solid transparent;
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,9 +333,28 @@ div.customer img {
     filter: invert(1);
 }
 
-section.dropbox-business.bg-lightblue,
+section.dropbox-business.bg-lightblue {
+    padding: 5rem 0 3rem;
+}
+
+section.dropbox-business.bg-lightblue>div {
+    align-items: first baseline;
+}
+
+section.dropbox-business.bg-lightblue h2 {
+    color: #61082b;
+    padding-top: 0;
+    width: 50%;
+}
+
+section.dropbox-business.bg-lightblue button {
+    font-size: .7rem;
+    width: 30%;
+    padding: .8em 1.6em;
+}
+
 section.faq {
-    padding-top: 5rem;
+    padding: 5rem 0;
 }
 
 section.faq h2,
