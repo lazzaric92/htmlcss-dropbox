@@ -124,7 +124,7 @@ div.jumbotron-info-content p:last-child {
 }
 
 section.subscription-plan {
-    padding-top: 6.5rem;
+    padding-top: 7rem;
 }
 
 section.subscription-plan h2 {
@@ -136,6 +136,7 @@ section.subscription-plan label {
     font-size: .8rem;
     vertical-align: text-top;
     margin-right: 2em;
+    cursor: pointer;
 }
 
 section.subscription-plan div.sub-options,
@@ -156,26 +157,88 @@ div.sub-options article.plan-card {
 
 article.plan-card p.sub-user {
     border-bottom: 1px solid #e4e4e5;
+    padding: .5rem;
+    text-align: center;
 }
 
 article.plan-card div.card-content {
-    padding: 0 1.5rem;
+    padding: 1rem;
+}
+
+article.plan-card p,
+article.plan-card ul,
+article.plan-card li,
+article.plan-card a,
+article.plan-card button {
+    font-size: .7rem;
+}
+
+article.plan-card p.sub-cost,
+article.plan-card ul.sub-recap {
+    font-weight: bold;
+}
+
+article.plan-card h3,
+article.plan-card p.sub-cost {
+    margin-bottom: .5em;
+}
+
+article.plan-card ul {
+    padding: 2.5em 0;
+}
+
+article.plan-card ul li {
+    font-weight: normal;
+    margin: 1em 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+article.plan-card ul li span {
+    width: 85%;
+    font-size: .6rem;
 }
 
 article.plan-card button {
     width: 100%;
+    padding: .8em 0;
+    margin-bottom: 1rem;
+}
+
+article.plan-card button~span {
+    font-size: .7rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e4e4e5;
+}
+
+article.plan-card ul.sub-recap,
+ul.sub-recap li:first-child {
+    margin-top: 1.5rem;
+}
+
+ul.sub-recap li i {
+    color: #0061ff;
 }
 
 div.sub-options article.custom-plan {
     flex-grow: 1;
 }
 
-article.plan-card p.sub-user {
-    text-align: center;
+article.custom-plan p.sub-cost {
+    margin-bottom: 2rem;
 }
 
-article.plan-card ul {
-    margin: 1em 0;
+div.custom-plan-info {
+    width: 70%;
+}
+
+div.custom-plan-info p {
+    font-size: .65rem;
+}
+
+article.custom-plan button {
+    padding: .8em 1.6em;
 }
 
 .btn-white {
