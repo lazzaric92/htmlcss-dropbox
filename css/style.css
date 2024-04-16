@@ -14,10 +14,22 @@ ul {
 
 p,
 li,
-a,
 button,
 span {
     font-size: .8em;
+}
+
+button {
+    background-color: #0061ff;
+    color: white;
+    border: none;
+    padding: .5em .8em;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+main section {
+    padding-bottom: 5em;
 }
 
 .container-big {
@@ -25,7 +37,7 @@ span {
     margin: 0 auto;
 }
 
-.container-small {
+.main-container {
     max-width: 50%;
     margin: 0 auto;
 }
@@ -35,15 +47,22 @@ span {
     justify-content: space-between;
 }
 
+.clearfix-left {
+    content: "";
+    display: table;
+    clear: left;
+}
+
 header nav {
     align-items: center;
     padding: 1rem;
     background-color: white;
-    border-bottom: 1px dashed black;
 }
 
 header nav ul {
     margin: 0 1em;
+    display: flex;
+    align-items: center;
 }
 
 header nav ul li {
@@ -51,26 +70,52 @@ header nav ul li {
     margin: 0 .5em
 }
 
-header nav ul li a {
+header nav ul li a:link,
+header nav ul li a:visited,
+div.jumbotron-info-content a:link,
+div.jumbotron-info-content a:visited {
     text-decoration: none;
     color: black;
 }
 
-button {
-    background-color: #0061ff;
-    color: white;
-    border: none;
-    padding: .5em .8em;
+section.jumbotron {
+    padding-bottom: .5rem;
+    padding-top: 3rem;
+}
+
+section.jumbotron h1 {
+    font-size: 3.3em;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+
+div.jumbotron-box>img {
+    width: 66%;
+    float: right;
 }
 
 div.jumbotron-box .jumbotron-info,
 section.dropbox-partner div.partner-info {
-    width: 40%;
-    border-top: 1px dashed white;
+    width: 32%;
 }
 
-main section {
-    padding-bottom: 5em;
+div.jumbotron-info div.jumbotron-info-content {
+    float: left;
+}
+
+div.jumbotron-info-content button {
+    margin: 1.5em 0;
+    padding: .8em 1.2em;
+}
+
+div.jumbotron-info-content p,
+div.jumbotron-info-content button {
+    font-size: 0.7em;
+}
+
+div.jumbotron-info-content p:last-child {
+    font-size: 2em;
+    margin-top: 1em;
 }
 
 section.subscription-plan div.sub-options,
@@ -135,7 +180,7 @@ section.customer-teams div.customer {
 }
 
 section.subscription-plan,
-section.bg-lightblue,
+section.dropbox-business.bg-lightblue,
 section.faq {
     padding-top: 5rem;
 }
