@@ -56,10 +56,10 @@ main section {
     justify-content: space-between;
 }
 
-.clearfix-left {
+.clearfix {
     content: "";
     display: table;
-    clear: left;
+    clear: both;
 }
 
 header nav {
@@ -110,6 +110,7 @@ div.jumbotron-box>img {
 
 div.jumbotron-box .jumbotron-info {
     width: 32%;
+    clear: left;
 }
 
 div.jumbotron-info div.jumbotron-info-content {
@@ -288,13 +289,12 @@ section.dropbox-business a:visited {
 section.customer-teams {
     background-color: #f5f5f5;
     padding: 0;
-    flex-wrap: wrap;
 }
 
 section.customer-teams div.customers {
     display: flex;
     flex-wrap: wrap;
-    flex-shrink: 0;
+    width: 400px;
 }
 
 section.customer-teams div.customer {
@@ -312,10 +312,20 @@ div.customer img {
 }
 
 section.customer-teams div.customer-info {
-    width: 40%;
-    min-width: 30%;
     padding: 2rem;
     margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+    section.customer-teams {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    div.customer-info {
+        order: 1;
+        width: 50%;
+    }
 }
 
 div.customer-info img {
@@ -410,12 +420,12 @@ footer div.language span {
     background-color: #a2d39b;
 }
 
-#florida-uni {
-    background-color: #0093ce;
-}
-
 #arizona-uni {
     background-color: #61082b;
+}
+
+#florida-uni {
+    background-color: #0093ce;
 }
 
 #topps {
@@ -426,12 +436,12 @@ footer div.language span {
     background-color: #d5001f;
 }
 
-#lonely-planet {
-    background-color: #0d2481;
-}
-
 #hearst-corp {
     background-color: #b4d0e7;
+}
+
+#lonely-planet {
+    background-color: #0d2481;
 }
 
 #clear-channel {
