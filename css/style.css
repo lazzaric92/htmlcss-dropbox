@@ -100,11 +100,11 @@ section.jumbotron {
 section.jumbotron h1 {
     font-size: 3.3rem;
     font-weight: 900;
-    margin-bottom: .5em;
+    margin-bottom: .8em;
 }
 
 div.jumbotron-box>img {
-    width: 66%;
+    width: 68%;
     float: right;
 }
 
@@ -129,7 +129,7 @@ div.jumbotron-info-content button {
 
 div.jumbotron-info-content p:last-child {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 2.6rem;
 }
 
 section.subscription-plan {
@@ -199,6 +199,28 @@ article.plan-card ul li {
     justify-content: space-around;
 }
 
+ul.sub-benefit li::before,
+ul.sub-recap li::before {
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-font-solid);
+}
+
+ul.sub-benefit li.benefit-user::before {
+    content: '\f007';
+}
+
+ul.sub-benefit li.benefit-archive::before {
+    content: '\f07b';
+}
+
+ul.sub-benefit li.benefit-share::before {
+    content: '\f1e0';
+}
+
+ul.sub-benefit li.benefit-user-team::before {
+    content: '\f0c0';
+}
+
 article.plan-card ul li span {
     width: 85%;
     font-size: .6rem;
@@ -221,7 +243,8 @@ ul.sub-recap li:first-child {
     margin-top: 1.5rem;
 }
 
-ul.sub-recap li i {
+ul.sub-recap li::before {
+    content: '\f00c';
     color: #0061ff;
 }
 
