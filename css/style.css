@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Open Sans", sans-serif;
+/* || GENERAL  */
+:root {
+    --lightgrey-border: #e4e4e5;
+    --grey-border: #b2b2b2;
+    --lightblue: #0061ff;
 }
 
-ul {
-    list-style-type: none;
+
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
 p,
@@ -18,30 +22,39 @@ button,
 span,
 a,
 article.plan-card ul,
-article.plan-card li,
-section.subscription-plan label {
+label,
+div.question>i {
     font-size: .7rem;
 }
 
 button {
-    background-color: #0061ff;
-    color: white;
-    border: none;
+    border: 1px solid transparent;
     padding: .5em 1em;
     margin-right: 0;
-    cursor: pointer;
 }
 
-.btn-white {
-    background-color: white;
-    color: black;
+a,
+button,
+label,
+.question>i,
+.language span {
+    cursor: pointer;
 }
 
 main section {
     padding-bottom: 5rem;
 }
 
-.container-big {
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+/* || UTILITIES  */
+.container-medium {
     max-width: 60%;
     margin: 0 auto;
 }
@@ -56,14 +69,22 @@ main section {
     justify-content: space-between;
 }
 
+.align-center {
+    align-items: center;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
 .clearfix {
     content: "";
     display: table;
     clear: both;
 }
 
+/* || HEADER */
 header nav {
-    align-items: center;
     padding: 1rem;
     background-color: white;
 }
@@ -76,22 +97,15 @@ header .nav-left>a img {
 header nav ul {
     margin: 0 1em;
     display: flex;
-    align-items: center;
 }
 
 header nav ul li {
-    display: inline-block;
     margin: 0 .5em
 }
 
-header nav ul li a:link,
-header nav ul li a:visited,
-div.jumbotron-info-content a:link,
-div.jumbotron-info-content a:visited {
-    text-decoration: none;
-    color: black;
-}
-
+/* ||   MAIN    */
+/* -----------  */
+/* || JUMBOTRON */
 section.jumbotron {
     padding-bottom: .5rem;
     padding-top: 3rem;
@@ -103,17 +117,17 @@ section.jumbotron h1 {
     margin-bottom: .8em;
 }
 
-div.jumbotron-box>img {
+.jumbotron img {
     width: 68%;
     float: right;
 }
 
-div.jumbotron-box .jumbotron-info {
+.jumbotron-info {
     width: 32%;
     clear: left;
 }
 
-div.jumbotron-info div.jumbotron-info-content {
+div.jumbotron-info-content {
     float: left;
 }
 
@@ -122,22 +136,18 @@ div.jumbotron-info-content button {
     padding: .8em 1.2em;
 }
 
-div.jumbotron-info-content p,
-div.jumbotron-info-content button {
-    font-size: 0.7rem;
-}
-
 div.jumbotron-info-content p:last-child {
     font-size: 2rem;
     margin-top: 2.6rem;
+    cursor: pointer;
 }
 
+/* || SUBSCRIPTION-PLAN */
 section.subscription-plan {
     padding-top: 7rem;
 }
 
 section.subscription-plan h2 {
-    font-size: 1.75rem;
     margin-bottom: 1.5em;
 }
 
@@ -148,27 +158,26 @@ section.subscription-plan input[type="radio"] {
 section.subscription-plan label {
     vertical-align: text-top;
     margin-right: 2em;
-    cursor: pointer;
 }
 
-section.subscription-plan div.sub-options,
-section.dropbox-business-feature div.dbusiness-features {
+div.sub-options,
+div.dropbusiness-features {
     flex-wrap: wrap;
     margin-top: 1rem;
 }
 
 div.sub-options article.plan-card,
-div.dbusiness-features article.feature-card {
+div.dropbusiness-features article.feature-card {
     width: calc((100% / 3) - 1rem);
     margin-top: 2rem;
 }
 
 div.sub-options article.plan-card {
-    border: 1px solid #e4e4e5;
+    border: 1px solid var(--lightgrey-border);
 }
 
 article.plan-card p.sub-user {
-    border-bottom: 1px solid #e4e4e5;
+    border-bottom: 1px solid var(--lightgrey-border);
     padding: .5rem;
     text-align: center;
 }
@@ -185,6 +194,10 @@ article.plan-card ul.sub-recap {
 article.plan-card h3,
 article.plan-card p.sub-cost {
     margin-bottom: .5em;
+}
+
+div.card-content p:nth-child(3) {
+    color: #47495f;
 }
 
 article.plan-card ul {
@@ -234,7 +247,7 @@ article.plan-card button {
 
 article.plan-card button~span {
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #e4e4e5;
+    border-bottom: 1px solid var(--lightgrey-border);
     margin-right: .2rem;
 }
 
@@ -245,7 +258,7 @@ ul.sub-recap li:first-child {
 
 ul.sub-recap li::before {
     content: '\f00c';
-    color: #0061ff;
+    color: var(--lightblue);
 }
 
 div.sub-options article.custom-plan {
@@ -268,6 +281,11 @@ article.custom-plan button {
     padding: .8em 1.6em;
 }
 
+/* || DROPBOX PARTNER */
+section.dropbox-partner {
+    padding: 1rem 0 6rem;
+}
+
 section.dropbox-partner img {
     width: 60%;
 }
@@ -285,6 +303,7 @@ div.partner-info button.btn-white {
     border: 1px solid black;
 }
 
+/* || DROPBOX BUSINESS FEATURE */
 article.feature-card img {
     width: 100%;
 }
@@ -293,6 +312,7 @@ article.feature-card h3 {
     margin: .4em 0 1em;
 }
 
+/* ||  DROPBOX BUSINESS */
 section.dropbox-business {
     padding-bottom: 6rem;
 }
@@ -300,27 +320,22 @@ section.dropbox-business {
 section.dropbox-business h2 {
     width: 60%;
     margin-bottom: 2.5rem;
-    font-size: 1.7rem;
     padding-top: 2rem;
 }
 
-article.plan-card a:visited,
-section.dropbox-business a:visited {
-    color: #0000d7;
-}
-
+/* || CUSTOMER-TEAMS */
 section.customer-teams {
     background-color: #f5f5f5;
     padding: 0;
 }
 
-section.customer-teams div.customers {
+.customer-teams div.customers {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
 }
 
-section.customer-teams div.customer {
+.customer-teams div.customer {
     border: 8px solid transparent;
     width: 200px;
     height: 200px;
@@ -334,7 +349,7 @@ div.customer img {
     filter: invert(1);
 }
 
-section.customer-teams div.customer-info {
+.customer-teams div.customer-info {
     padding: 2rem;
     margin: 0 auto;
 }
@@ -365,6 +380,7 @@ div.customer-info p {
     margin: 2.5em 0 2em;
 }
 
+/* || DROPBOX BUSINESS - LIGHTBLUE */
 section.dropbox-business.bg-lightblue {
     padding: 5rem 0 3rem;
 }
@@ -384,22 +400,23 @@ section.dropbox-business.bg-lightblue button {
     padding: .8em 1.6em;
 }
 
+/* || FAQ */
 section.faq {
     padding: 6rem 0 6.5rem;
 }
 
 section.faq h2 {
-    font-size: 1.75rem;
     padding-bottom: 1.5em;
-    border-bottom: 1px solid #b2b2b2
+    border-bottom: 1px solid var(--grey-border);
 }
 
-section.faq div.question {
+.faq div.question {
     padding: 1.5em 0;
-    border-bottom: 1px solid #b2b2b2;
+    border-bottom: 1px solid var(--grey-border);
     font-weight: bold;
 }
 
+/* || FOOTER */
 footer {
     background-color: black;
     color: white;
@@ -430,12 +447,53 @@ footer div.language {
     padding-top: 2em;
 }
 
-footer div.language span {
-    margin-right: .2rem;
+.language span::before,
+.language span::after {
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-font-solid);
+    margin: 0 .2rem;
 }
 
+.language span::before {
+    content: '\f57d'
+}
+
+.language span::after {
+    content: '\f0d8'
+}
+
+/*  ** STYLE */
 .bg-lightblue {
     background-color: #b4d0e7;
+}
+
+.btn-blue {
+    background-color: var(--lightblue);
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited,
+div.jumbotron-info-content a:link,
+div.jumbotron-info-content a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+article.plan-card a:visited,
+section.dropbox-business a:visited {
+    color: #0000d7;
+}
+
+header nav ul li:hover,
+footer nav ul li:hover,
+.jumbotron-info-content p>a:hover {
+    text-decoration: underline;
 }
 
 #designit {
