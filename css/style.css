@@ -6,11 +6,11 @@
 
 /* || GENERAL  */
 :root {
+    scroll-behavior: smooth;
     --lightgrey-border: #e4e4e5;
     --grey-border: #b2b2b2;
     --lightblue: #0061ff;
 }
-
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -137,9 +137,11 @@ div.jumbotron-info-content button {
 }
 
 div.jumbotron-info-content p:last-child {
-    font-size: 2rem;
-    margin-top: 2.6rem;
-    cursor: pointer;
+    margin-top: 3rem;
+}
+
+div.jumbotron-info-content a>i {
+    font-size: 2.2rem;
 }
 
 /* || SUBSCRIPTION-PLAN */
@@ -407,13 +409,28 @@ section.faq {
 
 section.faq h2 {
     padding-bottom: 1.5em;
-    border-bottom: 1px solid var(--grey-border);
 }
 
 .faq div.question {
-    padding: 1.5em 0;
-    border-bottom: 1px solid var(--grey-border);
+    padding: 1.5em 0 0;
+    border-top: 1px solid var(--grey-border);
     font-weight: bold;
+    cursor: pointer;
+}
+
+.faq .accordion-item:last-child {
+    border-bottom: 1px solid var(--grey-border);
+}
+
+.faq:hover .accordion-item:hover .accordion-item-content {
+    height: 6em;
+}
+
+.accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height .25s;
+    padding-top: 2rem;
 }
 
 /* || FOOTER */
@@ -490,10 +507,14 @@ section.dropbox-business a:visited {
     color: #0000d7;
 }
 
-header nav ul li:hover,
 footer nav ul li:hover,
-.jumbotron-info-content p>a:hover {
+.jumbotron-info-content p>a:hover,
+button:hover {
     text-decoration: underline;
+}
+
+header nav ul li a:hover {
+    color: var(--lightblue);
 }
 
 #designit {
