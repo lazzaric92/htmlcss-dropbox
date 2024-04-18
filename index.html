@@ -28,10 +28,21 @@
                         <a href="#">Perché Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">Funzioni</a>
+                        <a href="#dbusiness-feature">Funzioni</a>
                     </li>
-                    <li>
-                        <a href="#">Piani e prezzi</a>
+                    <li class="dropdown">
+                        <a class="drop" href="">Piani e prezzi</a>
+                        <div class="dropdown-content">
+                            <p>
+                                <a href="#professional-plan">Professional</a>
+                            </p>
+                            <p>
+                                <a href="#advanced-plan">Advanced</a>
+                            </p>
+                            <p>
+                                <a href="#enterprise-plan">Enterprise</a>
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -85,7 +96,7 @@
             <input type="radio" name="billing frequency" id="annual-bill">
             <label for="annual-bill">Fatturazione annuale</label>
             <div class="sub-options flex-between">
-                <article class="plan-card">
+                <article id="professional-plan" class="plan-card">
                     <p class="sub-user">
                         <span>
                             <i class="fa-solid fa-user"></i>
@@ -121,7 +132,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="plan-card">
+                <article id="advanced-plan" class="plan-card">
                     <p class="sub-user">
                         <span>
                             <i class="fa-solid fa-users"></i>
@@ -180,7 +191,7 @@
                         </ul>
                     </div>
                 </article>
-                <article class="plan-card">
+                <article id="enterprise-plan" class="plan-card">
                     <p class="sub-user">
                         <span>
                             <i class="fa-solid fa-building"></i>
@@ -273,7 +284,7 @@
             </div>
         </section>
 
-        <section class="dropbox-business-feature main-container">
+        <section class="dropbox-business-feature main-container" id="dbusiness-feature">
             <h2>Esegui più operazioni con Dropbox Business</h2>
             <div class="dropbusiness-features flex-between">
                 <article class="feature-card">
