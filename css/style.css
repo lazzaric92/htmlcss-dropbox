@@ -55,12 +55,12 @@ h2 {
 
 /* || UTILITIES  */
 .container-medium {
-    max-width: 60%;
+    max-width: calc((1200px / 100) * 60);
     margin: 0 auto;
 }
 
 .main-container {
-    max-width: 50%;
+    max-width: calc((1200px / 100) * 50);
     margin: 0 auto;
 }
 
@@ -89,6 +89,13 @@ h2 {
 }
 
 /* || HEADER */
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
 header nav {
     padding: 1rem;
     background-color: white;
@@ -135,7 +142,7 @@ header nav ul li {
 /* || JUMBOTRON */
 section.jumbotron {
     padding-bottom: .5rem;
-    padding-top: 3.5rem;
+    padding-top: calc(3.5rem + 60px);
 }
 
 section.jumbotron h1 {
@@ -341,33 +348,38 @@ article.feature-card h3 {
     margin: .4em 0 1em;
 }
 
-/* ||  DROPBOX BUSINESS */
-section.dropbox-business {
+/* ||  DROPBOX-CUSTOMERS */
+section.dropbox-customers {
+    padding-bottom: 0;
+}
+
+section.dropbox-customers div.main-container:first-child {
     padding-bottom: 6rem;
 }
 
-section.dropbox-business h2 {
-    width: 60%;
+section.dropbox-customers h2 {
+    width: 70%;
     margin-bottom: 2.5rem;
     padding-top: 2rem;
 }
 
-/* || CUSTOMER-TEAMS */
-section.customer-teams {
+.customer-teams {
     background-color: #f5f5f5;
     padding: 0;
+    height: 30vw;
 }
 
 .customer-teams div.customers {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
+    width: 30vw;
+    height: 30vw;
 }
 
 .customer-teams div.customer {
     border: 8px solid transparent;
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,18 +393,9 @@ div.customer img {
 .customer-teams div.customer-info {
     padding: 2rem;
     margin: 0 auto;
-}
-
-@media (max-width: 1100px) {
-    section.customer-teams {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    div.customer-info {
-        order: 1;
-        width: 50%;
-    }
+    width: 40vw;
+    height: 100%;
+    overflow: hidden;
 }
 
 div.customer-info img {
@@ -421,7 +424,7 @@ section.dropbox-business.bg-lightblue>div {
 section.dropbox-business.bg-lightblue h2 {
     color: #61082b;
     padding-top: 0;
-    width: 50%;
+    width: 60%;
 }
 
 section.dropbox-business.bg-lightblue a {
@@ -516,7 +519,7 @@ footer div.language {
 }
 
 section.login-main-content {
-    padding: 2rem 0;
+    padding: calc(2rem + 60px) 0 2rem;
 }
 
 .login-panel {
