@@ -276,7 +276,7 @@ article.plan-card button {
     margin-bottom: 1rem;
 }
 
-article.plan-card button~span {
+article.plan-card a~span {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--lightgrey-border);
     margin-right: .2rem;
