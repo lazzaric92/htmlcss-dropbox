@@ -199,7 +199,7 @@ div.dropbusiness-features {
 
 div.sub-options article.plan-card,
 div.dropbusiness-features article.feature-card {
-    width: calc((100% / 3) - 1rem);
+    width: calc((100% / 3) - .5rem);
     margin-top: 2rem;
 }
 
