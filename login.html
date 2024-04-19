@@ -32,24 +32,26 @@
         <section class="login-main-content">
             <div class="login-panel">
                 <h1>Registrati</h1>
-                <input type="email" name="email" placeholder="Indirizzo email">
-                <br>
-                <div class="btn">
-                    <a href="#">
-                        <button class="btn-blue">Continua</button>
-                    </a>
-                </div>
+                <form>
+                    <input type="email" name="email" placeholder="Indirizzo email" required>
+                    <br>
+                    <div class="btn">
+                        <input type="submit" class="btn-blue" value="Continua">
+                    </div>
+                </form>
                 <h2>Sei già registrato?</h2>
-                <input type="email" name="email" placeholder="Indirizzo email">
-                <br>
-                <input type="password" name="password" placeholder="············">
-                <br>
-                <input type="checkbox" id="remember-me">
-                <label for="remember-me">Ricordami</label>
-                <br>
-                <div class="btn">
-                    <button class="btn-blue">Accedi</button>
-                </div>
+                <form>
+                    <input type="email" name="email" placeholder="Indirizzo email" required>
+                    <br>
+                    <input type="password" name="password" placeholder="············" minlength="8" required>
+                    <br>
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Ricordami</label>
+                    <br>
+                    <div class="btn">
+                        <input type="submit" class="btn-blue" value="Accedi">
+                    </div>
+                </form>
             </div>
         </section>
     </main>

@@ -562,10 +562,13 @@ section.login-main-content {
     align-items: center;
 }
 
-.login-panel button {
+.btn input[type="submit"] {
     width: 8rem;
     font-size: .8rem;
+    padding: .4rem;
     margin-top: .5rem;
+    cursor: pointer;
+    border: 1px solid transparent;
 }
 
 /*  ** STYLE */
