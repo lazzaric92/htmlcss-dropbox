@@ -77,12 +77,6 @@ h2 {
     align-items: stretch;
 }
 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -140,29 +134,20 @@ header nav ul li {
 /* ||   MAIN    */
 /* -----------  */
 /* || JUMBOTRON */
-section.jumbotron {
+.jumbotron {
     padding-bottom: .5rem;
     padding-top: calc(3.5rem + 60px);
 }
 
-section.jumbotron h1 {
-    font-size: 3.3rem;
+.jumbotron h1 {
+    font-size: 3.2rem;
     font-weight: 900;
     margin-bottom: .8em;
 }
 
-.jumbotron img {
-    width: 68%;
-    float: right;
-}
-
-.jumbotron-info {
-    width: 32%;
-    clear: left;
-}
-
 div.jumbotron-info-content {
-    float: left;
+    width: 39%;
+    padding: 0 .3rem;
 }
 
 div.jumbotron-info-content button {
@@ -176,6 +161,16 @@ div.jumbotron-info-content p:last-child {
 
 div.jumbotron-info-content a>i {
     font-size: 2.2rem;
+}
+
+.jumbotron-info-img {
+    width: 61%;
+    position: relative;
+}
+
+.jumbotron-info-img img {
+    position: absolute;
+    width: 125%;
 }
 
 /* || SUBSCRIPTION-PLAN */
